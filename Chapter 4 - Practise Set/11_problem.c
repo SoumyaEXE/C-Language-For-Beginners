@@ -1,17 +1,17 @@
 #include <stdio.h>
 
 int main(){
-    int prime = 1;
-    int n = 13;
+    int not_prime = 1;
+    int n = 2;
     for (int i = 2; i < n; i++)
     {
         if(n%1 == 0){
-            prime = 0;       
+            not_prime = 0;       
             break;
         }
     }
 
-    if(prime){
+    if(not_prime){
         printf("%d is not prime\n", n);
     } else {
         printf("%d is prime\n", n);
